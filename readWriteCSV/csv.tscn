@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://readWriteCSV/csv.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1.0
+margin_bottom = -1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 106.0
+margin_top = 115.0
+margin_right = 206.0
+margin_bottom = 165.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 106.0
+margin_top = 254.0
+margin_right = 206.0
+margin_bottom = 304.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 106.0
+margin_top = 357.951
+margin_right = 206.0
+margin_bottom = 407.951
+text = "Guardar datos"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 106.0
+margin_top = 86.7646
+margin_right = 156.0
+margin_bottom = 100.765
+text = "nombre"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 106.0
+margin_top = 219.581
+margin_right = 156.0
+margin_bottom = 233.581
+text = "Edad"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 453.572
+margin_top = 44.0972
+margin_right = 953.572
+margin_bottom = 544.097
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
